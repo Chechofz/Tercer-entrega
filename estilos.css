@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.fondo-nav {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#09203f), to(#537895));
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+h1, h2 {
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+  color: #b2afc7;
+  background-color: rgba(41, 79, 129, 0.856);
+  margin-bottom: 0;
+}
+
+.destacados {
+  height: 500px;
+  width: 100%;
+}
+
+.destacados .caja {
+  height: 500px;
+}
+
+.destacados .matcin {
+  background-image: url(img/cincelado.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.destacados .mattre {
+  background-image: url(img/trenzado.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.destacados .matuy {
+  background-image: url(img/uruguayo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.ubicacion {
+  width: 100%;
+  background-color: rgba(41, 79, 129, 0.856);
+  margin: 0;
+}
+
+.ubicacion .dire {
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  grid-area: footer;
+  background-color: rgba(41, 79, 129, 0.856);
+  font-size: 22px;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer .redess {
+  color: #f5f5dc;
+  letter-spacing: 15px;
+}
+
+.fa-facebook {
+  color: #2956a3;
+}
+
+.fa-instagram {
+  color: #640964;
+}
+
+.fa-twitter {
+  color: #51aff8;
+}
+
+/*CONTACTO*/
+.registro {
+  text-align: center;
+  font-size: 25px;
+  background-color: rgba(41, 79, 129, 0.856);
+}
+
+/*beneficios*/
+.contenedor2 {
+  background-color: rgba(41, 79, 129, 0.856);
+  width: 100%;
+}
+
+.contenedor2 h3 {
+  text-align: center;
+  color: #b2afc7;
+}
+
+.contenedor2 p {
+  color: #000000;
+  padding: 8px;
+  text-align: left;
+  margin: 0;
+}
+/*# sourceMappingURL=estilos.css.map */

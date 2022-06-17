@@ -1,0 +1,122 @@
+$color1:rgba(41, 79, 129, 0.856);
+$color2:#f5f5dc;
+$color3:#b2afc7;
+$color4:#000000;
+
+$redes:(facebook: #2956a3,
+    instagram: #640964,
+    twitter: #51aff8);
+
+@mixin imagen {
+    background-size: cover;
+    background-position: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.fondo-nav {
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    color: $color3;
+    background-color: $color1;
+    margin-bottom: 0;
+}
+
+.destacados {
+    height: 500px;
+    width: 100%;
+
+    .caja {
+        height: 500px;
+    }
+
+    .matcin {
+        background-image: url(img/cincelado.jpg);
+        @include imagen
+    }
+
+    .mattre {
+        background-image: url(img/trenzado.jpg);
+        @include imagen
+    }
+
+    .matuy {
+        background-image: url(img/uruguayo.jpg);
+        @include imagen
+    }
+}
+
+h2 {
+    @extend h1
+}
+
+.ubicacion {
+    width: 100%;
+    background-color: $color1;
+    margin: 0;
+
+    .dire {
+        text-align: center;
+    }
+}
+
+.footer {
+    width: 100%;
+    grid-area: footer;
+    background-color: $color1;
+    font-size: 22px;
+    padding: 10px;
+    text-align: center;
+
+    .redess {
+        color: $color2;
+        letter-spacing: 15px;
+    }
+}
+
+@each $red,
+$colores in $redes {
+    .fa-#{$red} {
+        color: $colores;
+    }
+}
+
+/*CONTACTO*/
+
+.registro {
+    text-align: center;
+    font-size: 25px;
+    background-color: $color1;
+}
+
+
+/*beneficios*/
+
+.contenedor2 {
+    background-color: $color1;
+    width: 100%;
+
+    h3 {
+        text-align: center;
+        color: $color3;
+    }
+
+    p {
+        color: $color4;
+        padding: 8px;
+        text-align: left;
+        margin: 0;
+    }
+}
